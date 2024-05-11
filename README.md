@@ -1,38 +1,39 @@
 # create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## setup
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### init
 
 ```bash
+npm create svelte@latest svelte-sample
+◇  Which Svelte app template?
+│  Skeleton project
+│
+◇  Add type checking with TypeScript?
+│  Yes, using TypeScript syntax
+│
+◇  Select additional options (use arrow keys/space bar)
+│  Add ESLint for code linting, Add Prettier for code formatting
+└  Your project is ready!
+
+cd svelte-sample
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+### add tailwind
 
-To create a production version of your app:
+- https://tailwindcss.com/docs/guides/sveltekit
+- https://tailwindcss.com/docs/editor-setup#syntax-support
+
+### add skelton
+
+- https://www.skeleton.dev/docs/get-started
+  - Manual Installation
 
 ```bash
-npm run build
+npm i -D @skeletonlabs/skeleton @skeletonlabs/tw-plugin
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- https://www.skeleton.dev/docs/themes#dark-mode
